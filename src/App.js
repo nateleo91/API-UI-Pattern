@@ -18,7 +18,6 @@ function App() {
     })
     .catch((error) => console.log("Error", error))    
 }
-   
   useEffect(Book, []) 
 
   const renderTabs = data.slice(0, 8); 
@@ -29,7 +28,6 @@ function App() {
       <TabsList  data={renderTabs}/>
       <Footer />
     </div>
-  );
-}
+  )}
 
-export default App;
+export default App

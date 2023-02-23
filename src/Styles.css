@@ -14,12 +14,13 @@ p{
   font-weight: 250;
 }
 
-.allTabs{
+.showTabs{
   width: 87%;
   margin: 0 auto 2rem;
   align-items: center;
   border: 3px solid black;
   border-radius: 5px;
+  background-color: #AEAEAE;
 }
 
 .react-tabs__tab {
@@ -45,7 +46,13 @@ p{
   height: 720px;
   object-fit: contain;
   margin-left: -30px;
-  transition: all 0.3s ease-in-out 0s; 
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.footer {
+  text-align: center;
+  font-size: 100px;
+  background-color: grey;
 }
 
 .img figure {
@@ -135,16 +142,9 @@ figure:hover+span {
 	}
 }
 
-.bookInfo{
-  margin-top: 20px;
-  flex:auto;
-}
-
 .author{
   margin: 0px auto;
   border-radius: 20px;
-  width: 360px;
-  height: 300px;
   padding: 10px;
   color: black;
   font-size: 19px;
@@ -155,9 +155,6 @@ figure:hover+span {
 .release{
   margin-top: 0px auto;
   border-radius: 20px;
-  width: 360px;
-  height: 300px;
-  padding: 70px;
   padding-top: 0px;
   padding-bottom: 0px;
   font-size: 20px;
