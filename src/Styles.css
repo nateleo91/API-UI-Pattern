@@ -1,0 +1,262 @@
+* {
+  background-color: grey;
+}
+
+.header {
+  text-align: center;
+  font-size: 100px;
+  background-color: grey;
+}
+
+p{
+  font-size: 20px;
+  margin: 20px;
+  font-weight: 250;
+}
+
+.allTabs{
+  width: 87%;
+  margin: 0 auto 2rem;
+  align-items: center;
+  border: 3px solid black;
+  border-radius: 5px;
+}
+
+.react-tabs__tab {
+  display: inline-block;  
+  width: 11%;
+  padding: 1rem;
+  text-align: center;
+  cursor: pointer;
+  border: solid black 2px;
+  font-weight: 500;
+  font-size: 20px; 
+}
+ 
+.react-tabs__tab-panel--selected {
+  display: block;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+
+.bookImg {
+  width: 400px;
+  height: 720px;
+  object-fit: contain;
+  margin-left: -30px;
+  transition: all 0.3s ease-in-out 0s; 
+}
+
+.img figure {
+  position: relative;
+}
+
+.img figure::before {
+  position: absolute;
+	top: 61px;
+	left: -50%;
+	z-index: 2;
+	display: block;
+	content: '';
+	width: 30%;
+	height: 82%;
+	background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
+	background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
+	-webkit-transform: skewX(-25deg);
+	transform: skewX(-25deg);
+}
+
+.img figure:hover::before {
+	-webkit-animation: shine .75s;
+	animation: shine .75s;
+}
+.column {
+	margin: 15px 15px 0;
+	padding: 0;
+}
+.column:last-child {
+	padding-bottom: 60px;
+}
+.column::after {
+	content: '';
+	clear: both;
+	display: block;
+}
+.column div {
+	position: relative;
+	float: left;
+	width: 300px;
+	height: 200px;
+	margin: 0 0 0 25px;
+	padding: 0;
+}
+.column div:first-child {
+	margin-left: 0;
+}
+.column div span {
+	position: absolute;
+	bottom: -20px;
+	left: 0;
+	z-index: -1;
+	display: block;
+	width: 300px;
+	margin: 0;
+	padding: 0;
+	color: #444;
+	font-size: 18px;
+	text-decoration: none;
+	text-align: center;
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+	opacity: 0;
+}
+figure {
+	width: 375px;
+  height: 730px;
+  margin-top: 40px;
+	margin-left: 100px;
+	padding: 0;
+	background: grey;
+	overflow: hidden;
+}
+figure:hover+span {
+	bottom: -36px;
+	opacity: 1;
+}
+@-webkit-keyframes shine {
+	100% {
+		left: 100%;
+	}
+}
+@keyframes shine {
+	100% {
+		left: 100%;
+	}
+}
+
+.bookInfo{
+  margin-top: 20px;
+  flex:auto;
+}
+
+.author{
+  margin: 0px auto;
+  border-radius: 20px;
+  width: 360px;
+  height: 300px;
+  padding: 10px;
+  color: black;
+  font-size: 19px;
+  font-style: italic;
+  text-align: center;
+}
+
+.release{
+  margin-top: 0px auto;
+  border-radius: 20px;
+  width: 360px;
+  height: 300px;
+  padding: 70px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  font-size: 20px;
+  font-style: italic;
+  text-align: center;
+}
+
+@media screen and (min-width: 1025px) and (max-width:1316px) {
+  .bookName{
+    font-size: 38px;
+  }
+
+  .react-tabs__tab {
+    font-size: 17px;   
+  }
+
+  .bookImg{
+    margin-left: 0px;
+  }
+
+  .release{
+    width: 325px;
+    height: 340px;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width:1024px) {
+  .allTabs{
+    width: 95%;
+  }
+
+  .bookImg{
+    width: 200px;
+    height: 620px;
+  }
+  
+  .bookName{
+    font-size: 35px;
+  }
+
+  .react-tabs__tab {
+    font-size: 15px;
+  }
+
+}
+
+@media screen and (min-width: 481px) and (max-width:768px) {
+  p{
+    font-size: 16px;
+  }
+
+  .bookImg{
+    display: none;
+  }
+
+  .allTabs{
+    width: 95%;
+  }
+  
+  .bookName{
+    font-size: 30px;
+  }
+
+  .react-tabs__tab {
+    font-size: 12px;
+  }
+
+  .release{
+    font-size: 16px;
+    width: 285px;
+    height: 275px;
+  }
+
+}
+
+@media screen and (min-width: 320px) and (max-width:480px) {
+  p{
+    font-size: 14px;
+  }
+
+  .bookImg{
+    display: none;
+  }
+
+  .allTabs{
+    width: 95%;
+  }
+  
+  .bookName{
+    font-size: 24px;
+  }
+
+  .react-tabs__tab {
+    font-size: 10px;
+  }
+
+  .release{
+    font-size: 13px;
+    width: 245px;
+    height: 250px;
+  }
+}
